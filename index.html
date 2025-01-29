@@ -2,82 +2,114 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Tu Nombre - Portafolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/dist/tailwind.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Franyi Liriano</title>
+    <link rel="stylesheet" href="styles/styles.css">    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
 </head>
 <body class="bg-gray-50">
-    <!-- Cabecera -->
+    <!-- Header -->
     <header class="bg-white shadow-md">
         <div class="container mx-auto px-4 py-6">
-            <h1 class="text-3xl font-bold text-blue-600">Tu Nombre</h1>
+            <h1 class="text-3xl font-bold text-gray-800">Franyi Liriano</h1>
             <p class="text-gray-600 mt-2">Desarrollador de software con experiencia en ASP.NET Core y C#.</p>
-            <a href="https://github.com/yourusername" class="mt-4 text-blue-600 hover:text-blue-700">Ver repositorios →</a>
+            <a href="https://github.com/franyil" class="mt-4 text-blue-600 hover:text-blue-700">Ver repositorios →</a>
         </div>
     </header>
 
-    <!-- Sección de Proyectos -->
+    <!-- Projects Section -->
     <section class="container mx-auto px-4 py-8">
         <h2 class="text-2xl font-bold text-gray-800 mb-6">Proyectos Destacados</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Proyecto 1 -->
-            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div class="mb-4">
-                    <h3 class="text-xl font-semibold text-gray-700">Proyecto X</h3>
-                    <p class="text-sm text-gray-500 mt-2">Descripción del proyecto...</p>
-                </div>
-                <a href="https://github.com/yourusername/Project-X" class="mt-4 text-blue-600 hover:text-blue-700">Ver en GitHub →</a>
-                <img src="image.png" alt="Captura de Proyecto X" class="mt-4 rounded-lg shadow-md">
+            <div class="bg-white p-4 rounded-lg shadow-md project-card hover:shadow-lg transition-shadow">
+                <img src="project1.jpg" alt="Proyecto X" class="rounded-lg shadow-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Proyecto X</h3>
+                <p class="text-gray-600 mt-2">Descripción del proyecto...</p>
+                <a href="https://github.com/franyil/Project-X" class="mt-4 text-blue-600 hover:text-blue-700">Ver en GitHub →</a>
             </div>
 
             <!-- Proyecto 2 -->
-            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div class="mb-4">
-                    <h3 class="text-xl font-semibold text-gray-700">Proyecto Y</h3>
-                    <p class="text-sm text-gray-500 mt-2">Descripción del proyecto...</p>
-                </div>
-                <a href="https://github.com/yourusername/Project-Y" class="mt-4 text-blue-600 hover:text-blue-700">Ver en GitHub →</a>
-                <img src="image.png" alt="Captura de Proyecto Y" class="mt-4 rounded-lg shadow-md">
+            <div class="bg-white p-4 rounded-lg shadow-md project-card hover:shadow-lg transition-shadow">
+                <img src="project2.jpg" alt="Proyecto Y" class="rounded-lg shadow-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Proyecto Y</h3>
+                <p class="text-gray-600 mt-2">Descripción del proyecto...</p>
+                <a href="https://github.com/franyil/Project-Y" class="mt-4 text-blue-600 hover:text-blue-700">Ver en GitHub →</a>
             </div>
 
             <!-- Proyecto 3 -->
-            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div class="mb-4">
-                    <h3 class="text-xl font-semibold text-gray-700">Proyecto Z</h3>
-                    <p class="text-sm text-gray-500 mt-2">Descripción del proyecto...</p>
-                </div>
-                <a href="https://github.com/yourusername/Project-Z" class="mt-4 text-blue-600 hover:text-blue-700">Ver en GitHub →</a>
-                <img src="image.png" alt="Captura de Proyecto Z" class="mt-4 rounded-lg shadow-md">
+            <div class="bg-white p-4 rounded-lg shadow-md project-card hover:shadow-lg transition-shadow">
+                <img src="project3.jpg" alt="Proyecto Z" class="rounded-lg shadow-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Proyecto Z</h3>
+                <p class="text-gray-600 mt-2">Descripción del proyecto...</p>
+                <a href="https://github.com/franyil/Project-Z" class="mt-4 text-blue-600 hover:text-blue-700">Ver en GitHub →</a>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Habilidades -->
+    <!-- Skills Section -->
     <section class="bg-white py-8">
         <div class="container mx-auto px-4">
             <h2 class="text-2xl font-bold text-gray-800 mb-6">Habilidades</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <div class="bg-blue-50 p-4 rounded-lg">
-                    <code class="text-blue-600">C#</code>
-                    <p class="text-sm text-gray-600 mt-2">Desarrollo de aplicaciones backend</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-4 bg-gray-50 rounded-lg shadow-md">
+                    <code class="text-blue-600 text-xl font-bold">C#</code>
+                    <div class="skill-bar mt-2">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
                 </div>
-                <div class="bg-green-50 p-4 rounded-lg">
-                    <code class="text-green-600">ASP.NET Core</code>
-                    <p class="text-sm text-gray-600 mt-2">Desarrollo de APIs y servicios web</p>
+                
+                <div class="p-4 bg-gray-50 rounded-lg shadow-md">
+                    <code class="text-green-600 text-xl font-bold">ASP.NET Core</code>
+                    <div class="skill-bar mt-2">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
                 </div>
-                <div class="bg-purple-50 p-4 rounded-lg">
-                    <code class="text-purple-600">SQL</code>
-                    <p class="text-sm text-gray-600 mt-2">Trabajo con bases de datos relacionales</p>
+
+                <div class="p-4 bg-gray-50 rounded-lg shadow-md">
+                    <code class="text-purple-600 text-xl font-bold">SQL</code>
+                    <div class="skill-bar mt-2">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pie de página -->
+    <!-- Contact Section -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Contáctame</h2>
+            <!-- Redes sociales -->
+            <p class="mt-2 text-gray-500 text-center">Envío de mensajes: <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" class="text-blue-500">franyiliriano429@gmail.com</a></p>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 mt-8">
+                <a href="https://www.linkedin.com/in/franyi-liriano-728369192/" target="_blank" class="text-center text-blue-600 hover:text-blue-700">
+                    <img src="img/linkedin.png" alt="LinkedIn" class="w-12 h-12 mx-auto">
+                </a>
+                <a href="https://github.com/franyil" target="_blank" class="text-center text-blue-600 hover:text-blue-700">
+                    <img src="img/github.png" alt="GitHub" class="w-12 h-12 mx-auto">
+                </a>
+                <a href="https://twitter.com/franyi_lirianoF" target="_blank" class="text-center text-blue-600 hover:text-blue-700">
+                    <img src="img/x.png" alt="Twitter" class="w-12 h-12 mx-auto">
+                </a>
+                <a href="https://www.instagram.com/franyi_liriano/" target="_blank" class="text-center text-blue-600 hover:text-blue-700">
+                    <img src="img/instagram.png" alt="Instagram" class="w-12 h-12 mx-auto">
+                </a>
+                <a href="https://t.me/FranyiLiriano/" target="_blank" class="text-center text-blue-600 hover:text-blue-700">
+                    <img src="img/telegram.png" alt="Telegram" class="w-12 h-12 mx-auto">
+                </a>
+                <a href="https://wa.me/18097821778" target="_blank" class="text-center text-blue-600 hover:text-blue-700">
+                    <img src="img/whatsapp.png" alt="WhatsApp" class="w-12 h-12 mx-auto">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="bg-blue-600 text-white py-6">
         <div class="container mx-auto px-4">
-            <h3 class="text-xl font-bold mb-2">¡Contactáme!</h3>
-            <p class="mt-2">Si quieres más información, no dudes en contactarme.</p>
-            <a href="mailto:tuCorreo@email.com" class="mt-2 hover:text-blue-200">Correo electrónico →</a>
+            <p class="text-center">© 2025 Franyi Liriano. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
